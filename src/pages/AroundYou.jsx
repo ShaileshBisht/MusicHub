@@ -11,8 +11,8 @@ const AroundYou = () => {
   const { activeSong, isPlaying } = useSelector((state) => state.player);
   const { data, isFetching, error } = useGetSongsByCountryQuery(country);
 
-//   console.log("countrycode = " + country);  
-note - if below useEffect does not work , comment it.
+  //   console.log("countrycode = " + country);
+  // note - if below useEffect does not work , comment it.
 
   useEffect(() => {
     axios
